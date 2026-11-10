@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduManage | Student Login </title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./variable.css" />
+    <link rel="shortcut icon" href="./images/2.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    <header class="center-content">
+      <div class="max-width">
+        <div class="logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="5em"
+            height="5em"
+            viewBox="0 0 2048 2048"
+          >
+            <path d="M0 0h2048v2048H0z" fill="none" />
+            <path
+              fill="#fff"
+              d="M1582 1065q41 72 61 150t21 161v103l-640 321l-640-321q0-60 1-112t9-101t24-98t48-103L256 960v587q29 10 52 28t41 42t26 52t9 59v320H0v-320q0-30 9-58t26-53t40-42t53-28V896L0 832l1024-512l1024 512zM256 1728q0-26-19-45t-45-19t-45 19t-19 45v192h128zm30-896l738 369l738-369l-738-369zm1250 568q0-77-15-143t-53-135l-444 222l-444-222q-33 58-50 122t-18 132v24l512 256z"
+            />
+          </svg>
+          <div class="logo-brand">
+            <h1 class="title">EduManage</h1>
+            <h5 class="description">Learn-Grow-Excel</h5>
+          </div>
+        </div>
+
+        <form id="login-form" class="form-container">
+          <div class="wrappper">
+            <div class="middle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8em"
+                height="8em"
+                viewBox="0 0 2048 2048"
+              >
+                <path d="M0 0h2048v2048H0z" fill="none" />
+                <path
+                  fill="#061b45"
+                  d="M1582 1065q41 72 61 150t21 161v103l-640 321l-640-321q0-60 1-112t9-101t24-98t48-103L256 960v587q29 10 52 28t41 42t26 52t9 59v320H0v-320q0-30 9-58t26-53t40-42t53-28V896L0 832l1024-512l1024 512zM256 1728q0-26-19-45t-45-19t-45 19t-19 45v192h128zm30-896l738 369l738-369l-738-369zm1250 568q0-77-15-143t-53-135l-444 222l-444-222q-33 58-50 122t-18 132v24l512 256z"
+                />
+              </svg>
+
+              <h1>Student Management System</h1>
+              <div class="line"></div>
+              <h2 id="form-heading">Welcome Back!</h2>
+              <p id="form-description">Please login to access your dashboard</p>
+            </div>
+
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+
+            <label class="sr-only" for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="Username" autocomplete="username" minlength="3" maxlength="30" pattern="[A-Za-z0-9._-]{3,30}" title="Use 3–30 letters, numbers, periods, underscores, or hyphens." required />
+            <label class="sr-only" for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Password" autocomplete="current-password" minlength="8" maxlength="128" required />
+            <div id="confirm-password-wrap" hidden>
+              <label class="sr-only" for="confirm-password">Confirm password</label>
+              <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm password" autocomplete="new-password" minlength="8" maxlength="128" disabled />
+            </div>
+            <div class="box">
+              <input type="checkbox" name="check" id="mark" aria-controls="password confirm-password" />
+              <label for="mark">Show Password</label>
+            </div>
+            <button id="submit-button" class="btn-primary" type="submit">Login</button>
+            <button id="reset-button" class="btn-secondary" type="reset">Reset</button>
+            <button id="logout-button" class="btn-secondary" type="button" hidden>Log out</button>
+            <button id="mode-toggle" class="mode-toggle" type="button">Create an account</button>
+          </div>
+        </form>
+      </div>
+    </header>
+    <script src="./js.js" defer></script>
+  </body>
+</html>

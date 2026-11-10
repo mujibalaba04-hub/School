@@ -1,0 +1,27 @@
+:root {
+    /* Primary Colors */
+      --primary-color: #061B45;
+    --secondary-color: #005BEA;
+  
+    /* sizing */
+    --width:100%;
+    --max-width:1000px;
+    
+    /* Background Colors */
+    --white-color: #FFFFFF;
+
+    /* Text Colors */
+    --text-color: #061B45;
+    --text-light: #718096;
+
+    /* Border & Effects */
+    --border-color: #D5E1F0;
+    --shadow-color: rgba(3, 24, 63, 0.12);
+
+    /* border radius */
+    --border-radiusfull:999rem
+
+    /* Status Colors */
+    --success-color: #28A745;
+    --error-color: #FF3333;
+}

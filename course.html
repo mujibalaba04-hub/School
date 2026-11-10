@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EduManage | Courses</title>
+
+    <link rel="stylesheet" href="./course.css" />
+        <link rel="shortcut icon" href="./images/2.png" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <!-- LOGO -->
+
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+
+          <h2>EduManage</h2>
+
+          <p>Learn · Grow · Excel</p>
+        </div>
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+          <a href="./dashboard.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+          </a>
+
+          <a href="./student.html">
+            <i class="fa-solid fa-users"></i>
+            <span>Students</span>
+          </a>
+
+          <a href="./course.html" class="active">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Courses</span>
+          </a>
+
+          <a href="./about.html">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>About</span>
+          </a>
+
+          <a href="./index.html" class="logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </a>
+        </nav>
+
+        <!-- SIDEBAR QUOTE -->
+
+        <div class="sidebar-quote">
+          <p>"Education builds a better future"</p>
+
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main-content">
+        <!-- TOP HEADER -->
+
+        <header class="top-header">
+          <div class="date">
+            <i class="fa-regular fa-calendar-days"></i>
+
+            <span>November 07, 2026</span>
+          </div>
+
+          <div class="profile">
+            <div class="profile-icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <span id="welcome-message">Welcome</span>
+
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </header>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Course Management</h1>
+
+            <p>Explore, Manage and Organize Courses</p>
+          </div>
+        </section>
+
+        <!-- COURSE STATISTICS -->
+
+        <section class="statistics">
+          <div class="stat-card blue">
+            <i class="fa-solid fa-book-open"></i>
+
+            <div>
+              <p>Total Courses</p>
+
+              <h2>0</h2>
+            </div>
+          </div>
+
+          <div class="stat-card green">
+            <i class="fa-solid fa-users"></i>
+
+            <div>
+              <p>Enrolled Students</p>
+
+              <h2>0</h2>
+            </div>
+          </div>
+
+          <div class="stat-card purple">
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <div>
+              <p>Instructors</p>
+
+              <h2>0</h2>
+            </div>
+          </div>
+
+          <div class="stat-card orange">
+            <i class="fa-solid fa-star"></i>
+
+            <div>
+              <p>Available Courses</p>
+
+              <h2>6</h2>
+            </div>
+          </div>
+        </section>
+
+        <!-- COURSES SECTION -->
+
+        <section class="courses-section">
+          <!-- SECTION HEADER -->
+
+          <div class="section-header">
+            <div>
+              <h2>Available Courses</h2>
+
+              <p>Discover courses to develop your skills</p>
+            </div>
+
+            <div class="course-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input type="search" placeholder="Search courses..." />
+            </div>
+          </div>
+
+          <!-- COURSE GRID -->
+
+          <div class="course-grid">
+            <!-- COURSE 1 -->
+
+            <div class="course-card">
+              <div class="course-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                  alt="Web development course"
+                />
+
+                <span class="course-category">Technology</span>
+              </div>
+
+              <div class="course-content">
+                <div class="course-icon blue-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+
+                <h3>Web Development</h3>
+
+                <p>
+                  Learn HTML, CSS and JavaScript to build modern and responsive
+                  websites.
+                </p>
+
+                <div class="course-details">
+                  <span>
+                    <i class="fa-solid fa-clock"></i>
+                    12 Weeks
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-users"></i>
+                    Beginner
+                  </span>
+                </div>
+
+                <div class="course-footer">
+                  <span class="course-status"> Available </span>
+
+                  <a href="#" class="course-btn">
+                    View Course
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 2 -->
+
+            <div class="course-card">
+              <div class="course-image">
+                <img
+                  src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=80"
+                  alt="Graphic design course"
+                />
+
+                <span class="course-category">Creative</span>
+              </div>
+
+              <div class="course-content">
+                <div class="course-icon purple-icon">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+
+                <h3>Graphic Design</h3>
+
+                <p>
+                  Develop your creativity and learn to create professional
+                  graphic designs.
+                </p>
+
+                <div class="course-details">
+                  <span>
+                    <i class="fa-solid fa-clock"></i>
+                    10 Weeks
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-users"></i>
+                    Beginner
+                  </span>
+                </div>
+
+                <div class="course-footer">
+                  <span class="course-status"> Available </span>
+
+                  <a href="#" class="course-btn">
+                    View Course
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 3 -->
+
+            <div class="course-card">
+              <div class="course-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                  alt="Digital marketing course"
+                />
+
+                <span class="course-category">Marketing</span>
+              </div>
+
+              <div class="course-content">
+                <div class="course-icon orange-icon">
+                  <i class="fa-solid fa-bullhorn"></i>
+                </div>
+
+                <h3>Digital Marketing</h3>
+
+                <p>
+                  Learn social media marketing, SEO and online business
+                  promotion.
+                </p>
+
+                <div class="course-details">
+                  <span>
+                    <i class="fa-solid fa-clock"></i>
+                    8 Weeks
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-users"></i>
+                    Beginner
+                  </span>
+                </div>
+
+                <div class="course-footer">
+                  <span class="course-status"> Available </span>
+
+                  <a href="#" class="course-btn">
+                    View Course
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 4 -->
+
+            <div class="course-card">
+              <div class="course-image">
+                <img
+                  src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80"
+                  alt="UI UX design course"
+                />
+
+                <span class="course-category">Design</span>
+              </div>
+
+              <div class="course-content">
+                <div class="course-icon green-icon">
+                  <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+
+                <h3>UI/UX Design</h3>
+
+                <p>
+                  Learn how to design beautiful and user-friendly digital
+                  experiences.
+                </p>
+
+                <div class="course-details">
+                  <span>
+                    <i class="fa-solid fa-clock"></i>
+                    10 Weeks
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-users"></i>
+                    Beginner
+                  </span>
+                </div>
+
+                <div class="course-footer">
+                  <span class="course-status"> Available </span>
+
+                  <a href="#" class="course-btn">
+                    View Course
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 5 -->
+
+            <div class="course-card">
+              <div class="course-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                  alt="Computer science course"
+                />
+
+                <span class="course-category">Technology</span>
+              </div>
+
+              <div class="course-content">
+                <div class="course-icon blue-icon">
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+
+                <h3>Computer Science</h3>
+
+                <p>
+                  Understand computer systems, programming and software
+                  development.
+                </p>
+
+                <div class="course-details">
+                  <span>
+                    <i class="fa-solid fa-clock"></i>
+                    16 Weeks
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-users"></i>
+                    Intermediate
+                  </span>
+                </div>
+
+                <div class="course-footer">
+                  <span class="course-status"> Available </span>
+
+                  <a href="#" class="course-btn">
+                    View Course
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- COURSE 6 -->
+
+            <div class="course-card">
+              <div class="course-image">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                  alt="Business administration course"
+                />
+
+                <span class="course-category">Business</span>
+              </div>
+
+              <div class="course-content">
+                <div class="course-icon orange-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <h3>Business Administration</h3>
+
+                <p>
+                  Develop business management, leadership and entrepreneurial
+                  skills.
+                </p>
+
+                <div class="course-details">
+                  <span>
+                    <i class="fa-solid fa-clock"></i>
+                    14 Weeks
+                  </span>
+
+                  <span>
+                    <i class="fa-solid fa-users"></i>
+                    Intermediate
+                  </span>
+                </div>
+
+                <div class="course-footer">
+                  <span class="course-status"> Available </span>
+
+                  <a href="#" class="course-btn">
+                    View Course
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+          <p>© 2026 Student Management System | EduManage</p>
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      // Only show the dashboard when the saved session belongs to a stored account.
+      const loggedInUser = sessionStorage.getItem("edumanage_logged_user");
+      const storedUsers = JSON.parse(
+        localStorage.getItem("edumanage_users") || "{}",
+      );
+
+      if (!loggedInUser || !storedUsers[loggedInUser]) {
+        window.location.replace("./index.html");
+      } else {
+        document.getElementById("welcome-message").textContent =
+          `Welcome, ${loggedInUser}`;
+      }
+
+      // Clear the session before returning to the login page.
+      document
+        .getElementById("logout-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          sessionStorage.removeItem("edumanage_logged_user");
+          window.location.replace("./index.html");
+        });
+    </script>
+
+  </body>
+</html>

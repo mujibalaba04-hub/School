@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EduManage | Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/2.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./dashboard.css" />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-graduation-cap"></i>
+
+          <h2>EduManage</h2>
+
+          <p>Learn · Grow · Excel</p>
+        </div>
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+          <a href="index.html" class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+          </a>
+
+          <a href="./student.html">
+            <i class="fa-solid fa-users"></i>
+            Students
+          </a>
+
+          <a href="./course.html">
+            <i class="fa-solid fa-book-open"></i>
+            Courses
+          </a>
+
+          <a href="./about.html">
+            <i class="fa-solid fa-circle-info"></i>
+            About
+          </a>
+
+          <a href="./index.html" class="logout" id="logout-link">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+          </a>
+        </nav>
+
+        <!-- SIDEBAR QUOTE -->
+
+        <div class="sidebar-quote">
+          <i class="fa-solid fa-graduation-cap"></i>
+
+          <h3>
+            Dream Big<br />
+            Achieve More
+          </h3>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main-content">
+        <!-- TOP HEADER -->
+
+        <header class="top-header">
+          <div class="date">
+            <i class="fa-regular fa-calendar-days"></i>
+
+            <span>November 06, 2026</span>
+          </div>
+
+          <div class="profile">
+            <div class="profile-icon">
+              <i class="fa-solid fa-user"></i>
+            </div>
+
+            <span id="welcome-message">Welcome</span>
+          </div>
+        </header>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Registered Students</h1>
+
+            <p>Manage Students Efficiently</p>
+          </div>
+        </section>
+
+        <!-- STATISTICS -->
+
+        <section class="statistics">
+          <div class="stat-card blue">
+            <div class="stat-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+              <p>Total Students</p>
+
+              <h2>0</h2>
+            </div>
+          </div>
+
+          <div class="stat-card green">
+            <div class="stat-icon">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+
+            <div>
+              <p>Courses</p>
+
+              <h2>0</h2>
+            </div>
+          </div>
+
+          <div class="stat-card purple">
+            <div class="stat-icon">
+              <i class="fa-solid fa-calendar"></i>
+            </div>
+
+            <div>
+              <p>Today</p>
+
+              <h2>0</h2>
+            </div>
+          </div>
+
+          <div class="stat-card orange">
+            <div class="stat-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div>
+              <p>Active Students</p>
+
+              <h2>0</h2>
+            </div>
+          </div>
+        </section>
+
+        <!-- DASHBOARD CONTENT -->
+
+        <section class="dashboard-content">
+          <!-- REGISTRATION FORM -->
+
+          <div class="registration-card">
+            <div class="card-header">
+              <i class="fa-solid fa-user-plus"></i>
+
+              <h2>Student Registration Form</h2>
+            </div>
+
+            <form>
+              <div class="form-grid">
+                <div class="input-group">
+                  <label>Student Name</label>
+
+                  <input type="text" placeholder="Enter student name" />
+                </div>
+
+                <div class="input-group">
+                  <label>Email Address</label>
+
+                  <input type="email" placeholder="Enter email address" />
+                </div>
+
+                <div class="input-group">
+                  <label>Phone Number</label>
+
+                  <input type="tel" placeholder="Enter phone number" />
+                </div>
+
+                <div class="input-group">
+                  <label>Age</label>
+
+                  <input type="number" placeholder="Enter age" />
+                </div>
+              </div>
+
+              <!-- GENDER AND COURSE -->
+
+              <div class="form-bottom">
+                <div class="gender">
+                  <label>Gender:</label>
+
+                  <label>
+                    <input type="radio" name="gender" checked />
+
+                    Male
+                  </label>
+
+                  <label>
+                    <input type="radio" name="gender" />
+
+                    Female
+                  </label>
+                </div>
+
+                <div class="course">
+                  <label>Course:</label>
+
+                  <select>
+                    <option value="">Select Course</option>
+
+                    <option>Computer Science</option>
+
+                    <option>Graphic Design</option>
+
+                    <option>Digital Marketing</option>
+
+                    <option>Business Administration</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- BUTTONS -->
+
+              <div class="form-buttons">
+                <button type="button" class="add-button">
+                  <i class="fa-solid fa-plus"></i>
+
+                  Add Student
+                </button>
+
+                <button type="reset" class="reset-button">
+                  <i class="fa-solid fa-rotate"></i>
+
+                  Reset Form
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- STUDENT RECORDS -->
+
+          <div class="student-records">
+            <!-- SEARCH -->
+
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input type="search" placeholder="Search student by name..." />
+            </div>
+
+            <!-- TABLE -->
+
+            <div class="table-card">
+              <div class="table-header">
+                <h2>
+                  <i class="fa-solid fa-users"></i>
+
+                  Student Records
+                </h2>
+
+                <span>Total Students: 0</span>
+              </div>
+
+              <div class="table-container">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Student ID</th>
+
+                      <th>Name</th>
+
+                      <th>Email</th>
+
+                      <th>Phone</th>
+
+                      <th>Age</th>
+
+                      <th>Gender</th>
+
+                      <th>Course</th>
+
+                      <th>Date Registered</th>
+
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td colspan="9">
+                        <div class="empty-state">
+                          <i class="fa-solid fa-users"></i>
+
+                          <h3>No students registered yet!</h3>
+
+                          <p>Add your first student to get started.</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+          <p>© 2026 Student Management System</p>
+
+          <p>EduManage</p>
+        </footer>
+      </main>
+    </div>
+
+    <script>
+      // Only show the dashboard when the saved session belongs to a stored account.
+      const loggedInUser = sessionStorage.getItem("edumanage_logged_user");
+      const storedUsers = JSON.parse(
+        localStorage.getItem("edumanage_users") || "{}",
+      );
+
+      if (!loggedInUser || !storedUsers[loggedInUser]) {
+        window.location.replace("./index.html");
+      } else {
+        document.getElementById("welcome-message").textContent =
+          `Welcome, ${loggedInUser}`;
+      }
+
+      // Clear the session before returning to the login page.
+      document
+        .getElementById("logout-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          sessionStorage.removeItem("edumanage_logged_user");
+          window.location.replace("./index.html");
+        });
+    </script>
+    
+  </body>
+</html>
